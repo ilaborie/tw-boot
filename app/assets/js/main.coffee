@@ -1,0 +1,4 @@
+$ ->
+	$("#btnTest").click ->
+		alert "plop"
+			

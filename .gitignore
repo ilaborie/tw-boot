@@ -6,4 +6,7 @@ tmp
 .history
 dist
 tmp/
-
+.project
+.classpath
+.settings/
+.target/
