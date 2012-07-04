@@ -8,6 +8,10 @@ $ ->
   # Show Modal Dialog Button
   $("#btnDialog").click -> 
     $.get "/dialog", (data) -> openModalDialog(data.title,data.message)
+  # Plug autocomplete
+  $("#fldAutoComplete").typeahead(
+  	source: findAutocompleteValues
+  )
 
 # Create a dynamic notice
 createNotice = (notice) ->
@@ -23,3 +27,7 @@ openModalDialog = (title,message) ->
   $("#modalDialog").modal()
 
 # Autocompletion
+findAutocompleteValues = (typeahead, query) ->
+  $.get("/autocomplete?query=" +query, (data) ->
+  	typeahead.process(data)
+  )

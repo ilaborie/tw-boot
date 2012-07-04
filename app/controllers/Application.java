@@ -30,4 +30,9 @@ public class Application extends Controller {
 		TitledMessage msg = new TitledMessage("My Title","Lorem ipsum dolor sit ...");
 		return ok(toJson(msg));	
 	}
+
+	public static Result getAutocompletion(String query) {
+		List<String> values = Arrays.asList(query+'a',query+'b',query+'c');
+		return ok(toJson(values));
+	}
 }
