@@ -11,5 +11,12 @@ public class RoutesTest {
         Result result = routeAndCall(fakeRequest(GET, "/notices"));
         assertThat(result).isNotNull();
     }
+    
+    @Test
+    public void testDialog() {
+        Result result = routeAndCall(fakeRequest(GET, "/dialog"));
+        assertThat(result).isNotNull();
+    }
+
 
 }

@@ -27,22 +27,37 @@
         @content
     </div>
 
+    <div id="modalDialog" class="modal hide" >
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h3></h3>
+        </div>
+        <div class="modal-body">
+            <p></p>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="btn" data-dismiss="modal">Close</a>
+            <a id="modalDialogOk" href="#" class="btn btn-primary">Ok</a>
+        </div>
+</div>
+
     <!-- Scripts -->
     <script src="@routes.Assets.at("javascripts/jquery-1.7.2.min.js")" type="text/javascript"></script>
-
-    <script src="@routes.Assets.at("javascripts/main"+minified+".js")"></script>
     
-    <script src="@routes.Assets.at("javascripts/bootstrap/bootstrap-alert"+minified+".js")" type="text/javascript"></script>
     <script src="@routes.Assets.at("javascripts/bootstrap/bootstrap-button"+minified+".js")" type="text/javascript"></script>
     <script src="@routes.Assets.at("javascripts/bootstrap/bootstrap-carousel"+minified+".js")" type="text/javascript"></script>
     <script src="@routes.Assets.at("javascripts/bootstrap/bootstrap-collapse"+minified+".js")" type="text/javascript"></script>
     <script src="@routes.Assets.at("javascripts/bootstrap/bootstrap-dropdown"+minified+".js")" type="text/javascript"></script>
-    <script src="@routes.Assets.at("javascripts/bootstrap/bootstrap-modal"+minified+".js")" type="text/javascript"></script>
     <script src="@routes.Assets.at("javascripts/bootstrap/bootstrap-scrollspy"+minified+".js")" type="text/javascript"></script>
     <script src="@routes.Assets.at("javascripts/bootstrap/bootstrap-tab"+minified+".js")" type="text/javascript"></script>
     <script src="@routes.Assets.at("javascripts/bootstrap/bootstrap-tooltip"+minified+".js")" type="text/javascript"></script>
     <script src="@routes.Assets.at("javascripts/bootstrap/bootstrap-transition"+minified+".js")" bootstrap-typeaheade="text/javascript"></script>
     <script src="@routes.Assets.at("javascripts/bootstrap/bootstrap-typeahead"+minified+".js")" type="text/javascript"></script>
     <script src="@routes.Assets.at("javascripts/bootstrap/bootstrap-popover"+minified+".js")" type="text/javascript"></script>
+    
+    <script src="@routes.Assets.at("javascripts/bootstrap/bootstrap-alert"+minified+".js")" type="text/javascript"></script>
+    <script src="@routes.Assets.at("javascripts/bootstrap/bootstrap-modal"+minified+".js")" type="text/javascript"></script>
+
+    <script src="@routes.Assets.at("javascripts/main"+minified+".js")"></script>
 </body>
 </html>

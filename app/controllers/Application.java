@@ -8,6 +8,7 @@ import java.util.List;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.index;
+import ui.*;
 
 public class Application extends Controller {
 
@@ -23,5 +24,10 @@ public class Application extends Controller {
 				Notice.error("WTF ! "));
 
 		return ok(toJson(notices));
+	}
+
+	public static Result getDialog() {
+		TitledMessage msg = new TitledMessage("My Title","Lorem ipsum dolor sit ...");
+		return ok(toJson(msg));	
 	}
 }
