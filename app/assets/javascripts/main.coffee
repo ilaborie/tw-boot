@@ -27,7 +27,7 @@ openModalDialog = (title,message) ->
   $("#modalDialog").modal()
 
 # Autocompletion
-findAutocompleteValues = (typeahead, query) ->
+findAutocompleteValues = (query, process) ->
   $.get("/autocomplete?query=" +query, (data) ->
-  	typeahead.process(data)
+  	process(data)
   )
